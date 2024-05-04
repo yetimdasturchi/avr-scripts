@@ -3,7 +3,7 @@ Collection of bash scripts for avr-gcc
 
 Example code for testing:
 
-```
+```c
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
@@ -36,7 +36,7 @@ avr-gcc -mmcu=atmega328p -Os -o firmware.elf main.c
 
 Using scripts:
 
-```
+```bash
 ./flash.sh firmware.elf
 ./ram_usage.sh firmware.elf
 ```
